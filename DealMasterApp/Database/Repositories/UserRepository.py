@@ -13,14 +13,9 @@ class UserRepository:
         Создает нового пользователя в базе данных.
         """
         try:
-            user_data = user.__dict__
-
-            # Удаляем атрибут "_fields", который не нужен для вставки в базу данных
-            del user_data["_fields"]
-
             await self.pgsql_handler.execute_sql_script_async(
                 sql_script_path=self.scripts_path + "/create.sql",
-                params=user_data,
+                params=user,
             )
         except Exception as e:
             print(f"Ошибка при создании нового пользователя: {e}")

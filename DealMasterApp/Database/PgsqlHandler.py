@@ -21,6 +21,5 @@ class PgsqlHandler:
                     with open(sql_script_path, "r") as f:
                         sql_query = f.read()
                     await cur.execute(sql_query, params)
-                    await conn.commit()
         except Exception as e:
             print(f"Ошибка при выполнении SQL-скрипта: {e}")

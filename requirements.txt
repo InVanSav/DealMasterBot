@@ -1,0 +1,2 @@
+aiogram
+aiopg~=1.4.0
