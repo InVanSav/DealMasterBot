@@ -3,8 +3,8 @@ from uuid import UUID
 
 
 class Answer(NamedTuple):
-    answer_id: UUID
-    user_id: UUID
+    answer_id: str
+    user_id: str
     first_question: str
     second_question: str
     third_question: str
