@@ -7,7 +7,7 @@ class AiogramCommandHandler:
     def __init__(self, dp: Dispatcher):
         self.dp = dp
 
-    def register_command(self, command: str, handler):
+    def register_command(self, command: str, handler: callable):
         """
         Регистрирует новую команду.
 

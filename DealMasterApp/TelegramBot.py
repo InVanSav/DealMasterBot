@@ -40,15 +40,15 @@ class TelegramBot:
         """
         await message.answer(f"Hello, {html.bold(message.from_user.full_name)}!")
 
-    def _handle_commands(self):
-        command_handler = AiogramCommandHandler(self.dp)
-
-        command_handler.register_command("start", self.command_start_handler)
-        command_handler.register_command("help", self.command_help_handler)
-
     async def run(self):
         bot = Bot(
             token=self.token,
             default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 
         await self.dp.start_polling(bot)
+
+    def _handle_commands(self):
+        command_handler = AiogramCommandHandler(self.dp)
+
+        command_handler.register_command("start", self.command_start_handler)
+        command_handler.register_command("help", self.command_help_handler)
