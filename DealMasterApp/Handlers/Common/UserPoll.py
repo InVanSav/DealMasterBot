@@ -1,7 +1,7 @@
 from aiogram.fsm.state import StatesGroup, State
 
 
-class Form(StatesGroup):
+class UserPoll(StatesGroup):
     telegram_name = State()
     phone_number = State()
 
