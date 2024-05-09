@@ -4,7 +4,15 @@ from DealMasterApp.Database.PgsqlConnection import PgsqlConnection
 
 
 class PgsqlHandler:
+    """ Класс для работы с базой данных PostgreSQL. """
+
     def __init__(self, pgsql_connection: PgsqlConnection):
+        """
+        Инициализирует объект PgsqlHandler.
+
+        Args:
+            pgsql_connection (PgsqlConnection): Объект для подключения к базе данных.
+        """
         self.db_url = pgsql_connection.get_db_url()
 
     async def execute_sql_script_async(self, sql_script_path: str, params: any):
