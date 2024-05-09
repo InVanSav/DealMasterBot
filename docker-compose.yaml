@@ -24,3 +24,8 @@ services:
       PGADMIN_DEFAULT_PASSWORD: admin
     depends_on:
       - postgres
+
+#  bot:
+#    build: ./DealMasterApp/
+#    container_name: bot_container
+#    restart: unless-stopped
