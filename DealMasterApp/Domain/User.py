@@ -3,8 +3,7 @@ from uuid import UUID
 
 
 class User(NamedTuple):
-    user_id: str
-    first_name: str
-    last_name: str
+    user_id: UUID
+    telegram_name: str
     phone_number: str
-    from_bot: str
+    from_bot: bool

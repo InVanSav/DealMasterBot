@@ -1,8 +1,9 @@
+from DealMasterApp.Database.PgsqlHandler import PgsqlHandler
 from DealMasterApp.Domain import Answer
 
 
 class AnswerRepository:
-    def __init__(self, pgsql_handler, scripts_path):
+    def __init__(self, pgsql_handler: PgsqlHandler, scripts_path: str):
         self.pgsql_handler = pgsql_handler
         self.scripts_path = scripts_path
 

@@ -13,6 +13,5 @@ class PgsqlConnection:
         password = self.config_parser.get_value("Database", "Password")
         database = self.config_parser.get_value("Database", "Database")
         host = self.config_parser.get_value("Database", "Host")
-        port = self.config_parser.get_value("Database", "Port")
 
         return f"dbname={database} user={user} password={password} host={host}"

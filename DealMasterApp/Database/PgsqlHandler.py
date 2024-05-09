@@ -7,7 +7,7 @@ class PgsqlHandler:
     def __init__(self, pgsql_connection: PgsqlConnection):
         self.db_url = pgsql_connection.get_db_url()
 
-    async def execute_sql_script_async(self, sql_script_path, params):
+    async def execute_sql_script_async(self, sql_script_path: str, params: any):
         """
         Выполняет SQL-скрипт и передает ему параметры.
 

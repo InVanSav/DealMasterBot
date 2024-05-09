@@ -1,2 +1,2 @@
-INSERT INTO "Answers" ("answer_id", "user_id", "first_question", "second_question", "third_question", "fourth_question")
+INSERT INTO "Answers" ("answer_id", "user_id", "city", "district", "area", "price")
 VALUES (%s, %s, %s, %s, %s, %s);

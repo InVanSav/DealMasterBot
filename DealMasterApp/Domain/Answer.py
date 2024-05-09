@@ -3,9 +3,9 @@ from uuid import UUID
 
 
 class Answer(NamedTuple):
-    answer_id: str
-    user_id: str
-    first_question: str
-    second_question: str
-    third_question: str
-    fourth_question: str
+    answer_id: UUID
+    user_id: UUID
+    city: str
+    district: str
+    area: str
+    price: str
