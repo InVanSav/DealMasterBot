@@ -3,7 +3,8 @@ from aiogram.fsm.context import FSMContext
 from aiogram.types import Message
 
 from DealMasterApp.Handlers.Common.KeyboardGenerator import create_reply_keyboard
-from DealMasterApp.Handlers.Common.Parameters import available_cities, get_invalid_parameter_str, available_districts
+from DealMasterApp.Handlers.Common.Parameters import available_cities, get_invalid_parameter_str, available_districts, \
+    get_volgograd_districts, get_saint_petersburg_districts
 from DealMasterApp.Handlers.Common.UserPoll import UserPoll
 
 router = Router()
@@ -15,12 +16,7 @@ async def disctricts_volgograd_handler(message: Message, state: FSMContext):
     await state.update_data(city=message.text)
     await state.set_state(UserPoll.district)
 
-    button_labels = [
-        "Ворошиловский район",
-        "Советский район",
-        "Тракторозаводский район",
-        "Центральный район",
-    ]
+    button_labels = await get_volgograd_districts()
 
     await message.answer(
         "В каком районе Вы хотите купить жилье?",
@@ -34,13 +30,7 @@ async def districts_saint_petersburg_handler(message: Message, state: FSMContext
     await state.update_data(city=message.text)
     await state.set_state(UserPoll.district)
 
-    button_labels = [
-        "Невский район",
-        "Московский район",
-        "Курортный район",
-        "Красногвардейский район",
-        "Колпинский район",
-    ]
+    button_labels = await get_saint_petersburg_districts()
 
     await message.answer(
         "В каком районе Вы хотите купить жилье?",

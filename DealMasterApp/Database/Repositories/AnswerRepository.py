@@ -3,7 +3,7 @@ from DealMasterApp.Domain import Answer
 
 
 class AnswerRepository:
-    """Класс AnswerRepository для работы с ответами в базе данных."""
+    """Класс для работы с ответами в базе данных."""
 
     def __init__(self, pgsql_handler: PgsqlHandler, scripts_path: str):
         """
