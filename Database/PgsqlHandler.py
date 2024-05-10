@@ -1,6 +1,6 @@
 import aiopg
 
-from DealMasterApp.Database.PgsqlConnection import PgsqlConnection
+from Database.PgsqlConnection import PgsqlConnection
 
 
 class PgsqlHandler:

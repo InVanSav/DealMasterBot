@@ -1,4 +1,4 @@
-from DealMasterApp.Database.PgsqlHandler import PgsqlHandler
+from Database.PgsqlHandler import PgsqlHandler
 
 
 class CityRepository:

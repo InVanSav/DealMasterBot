@@ -1,5 +1,5 @@
-from DealMasterApp.Database.PgsqlHandler import PgsqlHandler
-from DealMasterApp.Domain import Answer
+from Database.PgsqlHandler import PgsqlHandler
+from Domain import Answer
 
 
 class AnswerRepository:

@@ -2,10 +2,10 @@ from aiogram import Router, F
 from aiogram.fsm.context import FSMContext
 from aiogram.types import Message
 
-from DealMasterApp.Handlers.Common.KeyboardGenerator import create_reply_keyboard
-from DealMasterApp.Handlers.Common.Parameters import available_cities, get_invalid_parameter_str, available_districts, \
+from Handlers.Common.KeyboardGenerator import create_reply_keyboard
+from Handlers.Common.Parameters import available_cities, get_invalid_parameter_str, available_districts, \
     get_volgograd_districts, get_saint_petersburg_districts
-from DealMasterApp.Handlers.Common.UserPoll import UserPoll
+from Handlers.Common.UserPoll import UserPoll
 
 router = Router()
 

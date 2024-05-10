@@ -1,6 +1,6 @@
 import uuid
 
-from DealMasterApp.DIContainer import district_repository, city_repository
+from DIContainer import district_repository, city_repository
 
 
 async def get_available_cities() -> list:

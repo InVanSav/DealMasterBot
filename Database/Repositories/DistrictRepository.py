@@ -1,6 +1,6 @@
 from uuid import UUID
 
-from DealMasterApp.Database.PgsqlHandler import PgsqlHandler
+from Database.PgsqlHandler import PgsqlHandler
 
 
 class DistrictRepository:

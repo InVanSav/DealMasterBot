@@ -3,8 +3,8 @@ from aiogram import Router, F
 from aiogram.fsm.context import FSMContext
 from aiogram.types import Message, ReplyKeyboardRemove
 
-from DealMasterApp.Handlers.Common.Parameters import available_prices
-from DealMasterApp.Handlers.Common.UserPoll import UserPoll
+from Handlers.Common.Parameters import available_prices
+from Handlers.Common.UserPoll import UserPoll
 
 router = Router()
 

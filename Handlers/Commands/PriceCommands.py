@@ -2,9 +2,9 @@ from aiogram import Router, F
 from aiogram.fsm.context import FSMContext
 from aiogram.types import Message
 
-from DealMasterApp.Handlers.Common.KeyboardGenerator import create_reply_keyboard
-from DealMasterApp.Handlers.Common.Parameters import get_invalid_parameter_str, available_prices, available_areas
-from DealMasterApp.Handlers.Common.UserPoll import UserPoll
+from Handlers.Common.KeyboardGenerator import create_reply_keyboard
+from Handlers.Common.Parameters import get_invalid_parameter_str, available_prices, available_areas
+from Handlers.Common.UserPoll import UserPoll
 
 router = Router()
 
