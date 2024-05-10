@@ -25,5 +25,5 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker-compose build
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/dealmasterbot-bot:latest
+          docker-compose build 
+          docker-compose push
