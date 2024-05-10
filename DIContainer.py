@@ -1,12 +1,12 @@
 import os
 
-from DealMasterApp.ConfigParser import ConfigParser
-from DealMasterApp.Database.PgsqlConnection import PgsqlConnection
-from DealMasterApp.Database.PgsqlHandler import PgsqlHandler
-from DealMasterApp.Database.Repositories.AnswerRepository import AnswerRepository
-from DealMasterApp.Database.Repositories.CityRepository import CityRepository
-from DealMasterApp.Database.Repositories.DistrictRepository import DistrictRepository
-from DealMasterApp.Database.Repositories.UserRepository import UserRepository
+from ConfigParser import ConfigParser
+from Database.PgsqlConnection import PgsqlConnection
+from Database.PgsqlHandler import PgsqlHandler
+from Database.Repositories.AnswerRepository import AnswerRepository
+from Database.Repositories.CityRepository import CityRepository
+from Database.Repositories.DistrictRepository import DistrictRepository
+from Database.Repositories.UserRepository import UserRepository
 
 # Путь к файлу конфигурации
 project_absolute_path = os.path.dirname(__file__)

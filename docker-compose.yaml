@@ -25,7 +25,18 @@ services:
     depends_on:
       - postgres
 
-#  bot:
-#    build: ./DealMasterApp/
-#    container_name: bot_container
-#    restart: unless-stopped
+  bot:
+    build: .
+    container_name: bot_container
+    restart: unless-stopped
+    depends_on:
+      - postgres
+
+  redirect_page:
+    build: ./RedirectPageApp/
+    container_name: redirect_page_container
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    depends_on:
+      - bot

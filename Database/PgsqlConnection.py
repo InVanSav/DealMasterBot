@@ -1,4 +1,4 @@
-from DealMasterApp.ConfigParser import ConfigParser
+from ConfigParser import ConfigParser
 
 
 class PgsqlConnection:

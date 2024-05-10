@@ -1,7 +1,5 @@
-from typing import Dict
-
-from DealMasterApp.Database.PgsqlHandler import PgsqlHandler
-from DealMasterApp.Domain import User
+from Database.PgsqlHandler import PgsqlHandler
+from Domain import User
 
 
 class UserRepository:

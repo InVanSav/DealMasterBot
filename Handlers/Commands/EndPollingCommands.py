@@ -5,11 +5,11 @@ from aiogram import Router
 from aiogram.fsm.context import FSMContext
 from aiogram.types import Message
 
-from DealMasterApp.DIContainer import user_repository, answer_repository
-from DealMasterApp.Domain.Answer import Answer
-from DealMasterApp.Domain.User import User
-from DealMasterApp.Handlers.Commands.PhoneNumberCommands import validate_phone_number
-from DealMasterApp.Handlers.Common.UserPoll import UserPoll
+from DIContainer import user_repository, answer_repository
+from Domain.Answer import Answer
+from Domain.User import User
+from Handlers.Commands.PhoneNumberCommands import validate_phone_number
+from Handlers.Common.UserPoll import UserPoll
 
 router = Router()
 

@@ -3,9 +3,9 @@ from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
 from aiogram.types import Message
 
-from DealMasterApp.Handlers.Common.KeyboardGenerator import create_reply_keyboard
-from DealMasterApp.Handlers.Common.Parameters import get_available_cities
-from DealMasterApp.Handlers.Common.UserPoll import UserPoll
+from Handlers.Common.KeyboardGenerator import create_reply_keyboard
+from Handlers.Common.Parameters import get_available_cities
+from Handlers.Common.UserPoll import UserPoll
 
 router = Router()
 

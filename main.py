@@ -7,14 +7,9 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from aiogram.fsm.storage.memory import MemoryStorage
 
-from DealMasterApp.DIContainer import TOKEN
-from DealMasterApp.Handlers.Commands import (
-    EndPollingCommands,
-    PriceCommands,
-    DistrictsCommands,
-    AreaCommands,
-    PhoneNumberCommands,
-    CommonCommands)
+from DIContainer import TOKEN
+from Handlers.Commands import EndPollingCommands, AreaCommands, DistrictsCommands, CommonCommands, PhoneNumberCommands, \
+    PriceCommands
 
 
 async def main():
