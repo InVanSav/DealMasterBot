@@ -24,3 +24,23 @@ services:
       PGADMIN_DEFAULT_PASSWORD: admin
     depends_on:
       - postgres
+
+  bot:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: bot_container
+    restart: unless-stopped
+    depends_on:
+      - postgres
+
+  redirect_page:
+    build:
+      context: ./RedirectPageApp
+      dockerfile: ./Dockerfile
+    container_name: redirect_page_container
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    depends_on:
+      - bot
